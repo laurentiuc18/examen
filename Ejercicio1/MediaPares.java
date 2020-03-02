@@ -12,20 +12,29 @@ public class MediaPares {
 		Scanner sc=new Scanner(System.in);
 		
 		
-		for(int i=0 ; i<10; i++) {
+		for(int i=0 ; i<enteros.length; i++) {
 			
 			System.out.println("Ingresa 10 numeros");
 			enteros[i]=sc.nextInt();
 		}
 		
-		for(int i=0 ; i<10; i++) {
+		
+		
+		
+		for(int i=0 ; i<enteros.length; i++) {
 			
-			if(enteros[i]%2==0) {
+			if(i%2==0) {
+				
 				x++;
 				numPar=numPar+enteros[i];
+				
 			}else {
+				
 				y++;
-			numImpar=numImpar+enteros[i];}
+				
+			numImpar=numImpar+enteros[i];
+			
+			}
 			
 		}
 		
